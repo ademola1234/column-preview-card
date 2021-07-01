@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 90px;
+}
+
+.container{
+    background-color: teal;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.sedans1{
+    background-color: rgb(241, 82, 24);
+    height: 340px;
+    border-radius: 10px 10px 0px 0px;
+}
+.sedans1 img{
+ padding-top: 25px;
+ padding-left: 50px;
+}
+
+.sedans2{
+    font-size: 23px;
+    color: #ffffff;
+      padding-left: 50px;
+      padding-top: 20px;
+}
+.para{
+    color: rgb(197, 186, 186);
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 19px;
+}
+
+a{
+    border: 1px solid white;
+    margin-left: 50px;
+    /* margin-top: 50px; */
+    /* padding: 10px; */
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+    border-radius: 40px;
+    border: white;
+}
+.sedans1 a{
+    text-decoration: none;
+    color: orange;
+    border: 1px solid white;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    top: 30px;
+}
+.suvs1{
+    background-color: teal;
+    height: 340px;
+    
+}
+
+.luxury1{
+    background-color: rgb(7, 61, 61);
+    height: 340px;
+    border-radius: 0px 0px 10px 10px;
+}
+.suvs1 img{
+    padding-top: 25px;
+ padding-left: 50px;
+}
+.suvs1 a{
+    text-decoration: none;
+    color:teal;
+    border: 1px solid white;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    top: 30px;
+}
+
+.luxury1 img{
+    padding-top: 25px;
+ padding-left: 50px;
+}
+
+.luxury1 a{
+    text-decoration: none;
+    color:rgb(7, 61, 61) ;
+    border: 1px solid white;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    top: 30px;
+}
+
+@media(min-width:900px){
+    .container{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        width: 500px;
+    }
+    .sedans1{
+        padding: 37px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .luxury1{
+        padding: 37px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .suvs1 a{
+        position: relative;
+        top: 75px;
+        /* margin-top: 60px; */
+        background-color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+    .suvs1 a:active{
+        background-color: transparent;
+        color: white;
+    }
+    a{
+        border-radius: 40px;
+        /* color: teal; */
+    }
+    .para{
+        line-height: 22px;
+    }
+    .sedans1 img{
+        padding: 0px;
+        /* margin-top: 10px; */
+    }
+     .luxury1 .para{
+         padding: 5px;
+     }
+     .sedans1 .para{
+         padding: 4px;
+     }
+     .sedans1 .sedans2{
+    position: relative;
+    right: 47px;
+    padding-bottom:30px;
+     }
+     .suvs1 img{
+         padding: 37px 0px 0px 40px;
+     }
+     .suvs1 .para{
+         padding-top: 41px;
+     }
+     .sedans1 a{
+         cursor: pointer;
+         position: relative;
+         right: 13px;
+         top: 57px;
+         background-color:white ;
+         border: 1px solid white;
+         margin-left: 10px;
+         /* margin-right: 10px; */
+         /* margin-top: 70px; */
+     }
+
+      .sedans1 a:active{
+         background-color:transparent ;
+         color: white;
+     }
+     .sedans1 a{
+         color: rgb(241, 82, 24);
+     }
+     .luxury1 img{
+        position: relative;
+        bottom: 22px;
+        right: 43px;
+     }
+     .luxury1 .sedans2{
+         position: relative;
+         right: 44px;
+         bottom: 21px;
+     }
+     .luxury1 a{
+         cursor: pointer;
+         background-color: white;
+         border: 1px solid white;
+         position: relative; 
+         right:15px;
+         top: 57px;
+         margin-left: 10px;
+
+     }
+     .luxury1 a:active{
+           background-color: transparent;
+           color: white;
+     }
+     .luxury1 a{
+         color:rgb(7, 61, 61);
+     }
+
+}
